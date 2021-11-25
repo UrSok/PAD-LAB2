@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Common.Models
+{
+     //modelul cum trebuie sa arate un movie
+     public class Movie : MongoDocument 
+     {
+          public string Name { get; set; }
+          public List<string> Actors { get; set; }
+          public decimal? Budget { get; set; }
+          public string Description { get; set; }
+
+     }
+}
